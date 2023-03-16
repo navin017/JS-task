@@ -1,5 +1,5 @@
 //even Or odd
-let a  = prompt("Enter a number to check ODD or EVEN");
+let a  = (prompt("Enter a number to check ODD or EVEN"));
 // if(typeof a !== number && typeof a === 'string'){
 //     console.log("This is only for Numbers");}
 if(a%2==0)
@@ -11,7 +11,7 @@ if(a%2==0)
  
 
 //Prime
-let n = prompt("Enter the number")
+let n = prompt("Enter the number to check it is prime or not")
 function isPrime(n) {
     
     if (n <= 1)
@@ -30,12 +30,12 @@ function isPrime(n) {
     return true;
 }
 isPrime(n) 
-    ? console.log("it is prime") 
-    : console.log("not a prime");
+    ? console.log(n+" "+"it is prime") 
+    : console.log(n+" "+"not a prime");
 
 //Fibonacci
 const c = parseInt(prompt("Enter a Number"));
-
+console.log("Fibonacci series : ");
 let fn=0,sn=1,temp;
 console.log(fn);
 console.log(sn);
