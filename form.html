@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students registration form</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1 style="text-align:center;"><u> STUDENTS REGISTRATION FORM</u></h1>
+    </div>
+    <div class="cent">
+    <div class="form">
+
+        <table>
+            <form name="form" action="/action_page.php"  method="post">
+                <tr>
+                    <td class="co">
+                        <label>FIRST NAME</label>
+                    </td>
+                    <td class="field">
+                     <input type="text" name="fname" > (max 30-characters a-z or A-Z)
+                     
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="co">
+                        <label>LAST NAME</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" name="lname"> (max 30-characters a-z or A-Z)
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="co">
+                        <label id="DOB">DATE OF BIRTH</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="co">
+                        <label id="em">EMAIL ID</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label id="mob">MOBILE NUMBER</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" required> (10 digit-number)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="gen">GENDER</label>
+                    </td>
+                    <td class="field">
+                        <input type="checkbox" required>Male
+                        <input type="checkbox" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="ad">ADDRESS</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="city">CITY</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" required> (max 30-characters a-z or A-Z)
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label id="pc">PIN CODE</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" required> (6 digit-numbers)
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <label id="cy">COUNTRY</label>
+                    </td>
+                    <td class="field">
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="hob">HOBBIES</label>
+                    </td>
+                    <td class="field">
+                        Drawing <input type="checkbox" required> Singing <input type="checkbox" required> Dancing <input
+                            type="checkbox" required>
+                        Sketching<input type="checkbox" required><br> Others <input type="checkbox" required> <input
+                            type="text" required>
+                    </td>
+                </tr>
+
+
+                <table style="width:0%" ;>
+                    <td>
+                        <label id="qal">QUALIFICATION</label>
+                    </td>
+
+                    <td class="field">
+                        <table style="width:100%;">
+                            <tr>
+                                <th>SI.NO.</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>percentage</th>
+                                <th>Year of passing</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Class X
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Class XII
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    Graduation
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    4
+                                </td>
+                                <td>
+                                    Masters
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td style="text-align: center;">
+                                    (10 char max)
+                                </td>
+                                <td style="text-align: center;">
+                                    (upto 2 decimal)
+                                </td>
+
+                            </tr>
+                        </table>
+
+                    </td>
+                    <tr>
+                        <td>
+                            <label id="course">COURSES APPLIED FOR</label>
+                        <td class="field">
+                            BCA<input type="text">B.com<input type="radio">B.sc<input type="radio">B.A<input
+                                type="radio">
+                        </td>
+                        </td>
+                    </tr><br><br>
+                    <tr class="bot">
+                  
+                        <td style="text-align:center ;" class="field">
+
+                            <input type="submit" value="submit" onclick="return ValidateEmail()">
+                        </td>
+                        <td>
+                            <input type="button" value="Reset">
+                    
+                    </div>
+                    </tr>
+                </table>
+            </form>
+        </table>
+    </div>
+</div>
+<script src="./event.js"></script>
+</body>
+
+</html>
+<!-- // onclick="return firstName()" -->

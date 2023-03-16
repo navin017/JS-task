@@ -1,128 +1,123 @@
 //even Or odd
-let a  = (prompt("Enter a number to check ODD or EVEN"));
+let a = (prompt("Enter a number to check ODD or EVEN"));
 // if(typeof a !== number && typeof a === 'string'){
 //     console.log("This is only for Numbers");}
-if(a%2==0)
- console.log(a+" "+"Is a Even Number");
- else if(a%2!=0){
-    console.log(a+" "+"Is a Odd Number");
-     }
- 
- 
+if (a % 2 == 0)
+    console.log(a + " " + "Is a Even Number");
+else if (a % 2 != 0) {
+    console.log(a + " " + "Is a Odd Number");
+}
+
+
 
 //Prime
 let n = prompt("Enter the number to check it is prime or not")
 function isPrime(n) {
-    
+
     if (n <= 1)
         return false;
-    
+
     if (n == 2 || n == 3)
         return true;
-    
-    if (n % 2 == 0 || n % 3 == 0)
-        return false;
-    
-    for (var i = 2; i <= n/2; i++)
+
+    for (var i = 2; i < n; i++) {
         if (n % i == 0)
             return false;
+    }
 
     return true;
 }
-isPrime(n) 
-    ? console.log(n+" "+"it is prime") 
-    : console.log(n+" "+"not a prime");
+isPrime(n)
+    ? console.log(n + " " + "it is prime")
+    : console.log(n + " " + "not a prime");
 
 //Fibonacci
 const c = parseInt(prompt("Enter a Number"));
 console.log("Fibonacci series : ");
-let fn=0,sn=1,temp;
+let fn = 0, sn = 1, temp;
 console.log(fn);
 console.log(sn);
-for(let i=0;i<=c;i++){
+for (let i = 0; i <= c; i++) {
     console.log(temp);
-    temp=fn+sn;
-    fn=sn;
-    sn=temp;
-    
+    temp = fn + sn;
+    fn = sn;
+    sn = temp;
+
 }
 
 //Sum and Average 
 var d = [2, -9, 0, 5, 12, -25, 22, 9, 8, 12]
 let f = d.length;
 let sum = 0;
-for(let i=0;i<f;i++)
-{
- sum += d[i];
- }
-console.log(sum+" is the sum of the array");
-console.log(sum/f + " is the Average of the array")
+for (let i = 0; i < f; i++) {
+    sum += d[i];
+}
+console.log(sum + " is the sum of the array");
+console.log(sum / f + " is the Average of the array")
 
 //pattern
 
-let h="";
+let h = "";
 
-for(let i=1;i<=5;i++){
-    for(let j=1;j<=i;j++){
-        h+="*";
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        h += "*";
 
-    }h+="\n";
-  
-    
-}console.log(h);
+    } h += "\n";
+
+
+} console.log(h);
 
 //Numbers Pattern
 
-let l ="";
-for(let i=1;i<=5;i++){
-    for(let j=1;j<=i;j++){
-        l+=j
+let l = "";
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        l += j
 
-    }l+="\n";
-  
-    
-}console.log(l);
+    } l += "\n";
+
+
+} console.log(l);
 
 //numbers pattern 2
 
-let o ="";
-let inc = 1;  
-for(let i=1;i<=5;i++){
-    for(let j=1;j<=i;j++){
-        o+=inc;
+let o = "";
+let inc = 1;
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        o += inc;
         inc++;
 
-    }o+="\n";}
+    } o += "\n";
+}
 console.log(o);
 
 //to print acute angle "*" pattern mirror
-let q ="";
+let q = "";
 
-for(let i=1;i<=5;i++)
-{
-    for(let j=0;j<=5-i;j++){
-        q+=" ";
+for (let i = 1; i <= 5; i++) {
+    for (let j = 0; j <= 5 - i; j++) {
+        q += " ";
 
-    }for(let z=0;z<i;z++){
-        q+="*";
+    } for (let z = 0; z < i; z++) {
+        q += "*";
     }
-    q+="\n";
+    q += "\n";
 }
-   console.log(q);
+console.log(q);
 
 //pyramid pattern
-let A ="";
+let A = "";
 
-for(let i=1;i<=5;i++)
-{
-    for(let j=0;j<5-i;j++){
-        A+=" ";
+for (let i = 1; i <= 5; i++) {
+    for (let j = 0; j < 5 - i; j++) {
+        A += " ";
 
-    }for(let z=0;z<i;z++){
-        A+=" *";
+    } for (let z = 0; z < i; z++) {
+        A += " *";
     }
-    A+="\n";
+    A += "\n";
 }
-   console.log(A);
+console.log(A);
 
-   
