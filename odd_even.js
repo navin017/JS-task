@@ -72,7 +72,7 @@ for(let i=1;i<=5;i++){
 }console.log(h);
 
 //Numbers Pattern
-let  k= 0;
+
 let l ="";
 for(let i=1;i<=5;i++){
     for(let j=1;j<=i;j++){
@@ -84,7 +84,7 @@ for(let i=1;i<=5;i++){
 }console.log(l);
 
 //numbers pattern 2
-let  m= 0;
+
 let o ="";
 let inc = 1;  
 for(let i=1;i<=5;i++){
@@ -93,7 +93,7 @@ for(let i=1;i<=5;i++){
         inc++;
 
     }o+="\n";}
-console.log(" "+o);
+console.log(o);
 
 //to print acute angle "*" pattern mirror
 let q ="";
@@ -109,5 +109,20 @@ for(let i=1;i<=5;i++)
     q+="\n";
 }
    console.log(q);
+
+//pyramid pattern
+let A ="";
+
+for(let i=1;i<=5;i++)
+{
+    for(let j=0;j<5-i;j++){
+        A+=" ";
+
+    }for(let z=0;z<i;z++){
+        A+=" *";
+    }
+    A+="\n";
+}
+   console.log(A);
 
    
